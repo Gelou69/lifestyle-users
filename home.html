@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lifestyle Medical Spa — European Aesthetic Precision</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="request.css">
+</head>
+
+<body>
+
+  <div id="cur"></div>
+  <div id="ring"></div>
+
+
+  <nav id="nav">
+    <img src="logo.png" alt="lifestyle Medical Spa Logo" class="logo-img">
+    <a href="#home" class="logo">lifestyle <em>Medical Spa</em></a>
+    <div class="nav-r">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#why-euro">Why European</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#aftercare">Aftercare</a></li>
+      </ul>
+      <a href="#contact" class="nav-book">Book Now</a>
+      <div class="ham" id="ham"><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="mob" id="mob">
+    <a href="#home" onclick="cm()">Home</a>
+    <a href="#about" onclick="cm()">About</a>
+    <a href="#treatments" onclick="cm()">Treatments</a>
+    <a href="#why-euro" onclick="cm()">Why European</a>
+    <a href="#pricing" onclick="cm()">Pricing</a>
+    <a href="#aftercare" onclick="cm()">Aftercare</a>
+    <a href="#contact" onclick="cm()" class="mob-book">Book Now</a>
+  </div>
+
+  <section id="home" class="hero">
+
+    <!-- ── Multi-video cinematic background ── -->
+    <div class="hero-bg">
+      <div class="hvb-stage" id="hvbStage">
+        <video class="hvb-vid active" autoplay muted playsinline preload="auto">
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+        <video class="hvb-vid" muted playsinline preload="auto">
+          <source src="video13.mp4" type="video/mp4">
+        </video>
+        <video class="hvb-vid" muted playsinline preload="auto">
+          <source src="video14.mp4" type="video/mp4">
+        </video>
+        <video class="hvb-vid" muted playsinline preload="auto">
+          <source src="video15.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Layered overlays for depth -->
+      <div class="hvb-overlay-gradient"></div>
+      <div class="hvb-overlay-vignette"></div>
+      <div class="hvb-overlay-scanlines"></div>
+    </div>
+
+    <!-- ── Floating counter / progress pills ── -->
+    <div class="hero-vid-counter" id="heroVidCounter">
+      <span class="hvc-num" id="hvcNum">01</span>
+      <div class="hvc-track"><div class="hvc-fill" id="hvcFill"></div></div>
+      <span class="hvc-total">04</span>
+    </div>
+
+    <!-- ── Main content ── -->
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="htag-dot"></span>
+        European Expertise · Advanced Training · Precision Aesthetic Medicine
+      </div>
+      <h1 class="hero-h1">
+        <span class="hero-h1-line" data-line="1">Excellence in</span>
+        <span class="hero-h1-line hero-h1-em" data-line="2"><em>Aesthetic</em></span>
+        <span class="hero-h1-line hero-h1-em" data-line="3"><em>Medicine</em></span>
+      </h1>
+      <p class="hero-sub">At lifestyle Medical Spa, excellence begins with continuous education and international
+        expertise. Our lead practitioner is not only a highly experienced aesthetic specialist but also an educator and
+        trainer in Europe — combining scientific precision with artistic understanding of facial anatomy.</p>
+      <div class="hero-ctas">
+        <a href="#treatments" class="btn-outline-white">Explore Treatments</a>
+        <a href="#contact" class="btn-gold-fill">Book Consultation</a>
+      </div>
+    </div>
+
+    <!-- ── Vertical side label ── -->
+    <div class="hero-side-text">Katarzyna Marcinec — Master Injector</div>
+
+    <!-- ── Scroll indicator ── -->
+    <div class="hero-scroll-line"></div>
+    <div class="hero-scroll-label">
+      <span>Scroll</span>
+      <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+        <rect x="1" y="1" width="10" height="18" rx="5" stroke="currentColor" stroke-width="1.2"/>
+        <circle class="hero-scroll-dot" cx="6" cy="5" r="2" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <!-- ── Bottom image strip replaced by video thumbnails ── -->
+    <div class="hero-images-strip hero-strip-slideshow" id="heroStrip">
+      <div class="his-item his-slide active">
+        <img src="thumbnail.jpg" alt="Aesthetic Treatment">
+      </div>
+      <div class="his-item his-slide his-mid">
+        <img src="thumbnail1.jpg" alt="Precision Treatment">
+      </div>
+      <div class="his-item his-slide">
+        <img src="thumbnail2.jpg" alt="Natural Results">
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Botox</span><span class="dot">◆</span>
+      <span>Lip Augmentation</span><span class="dot">◆</span>
+      <span>Facial Volumetry</span><span class="dot">◆</span>
+      <span>Biostimulators</span><span class="dot">◆</span>
+      <span>Mesotherapy</span><span class="dot">◆</span>
+      <span>Dermal Fillers</span><span class="dot">◆</span>
+      <span>European Precision</span><span class="dot">◆</span>
+      <span>Natural Results</span><span class="dot">◆</span>
+      <span>Botox</span><span class="dot">◆</span>
+      <span>Lip Augmentation</span><span class="dot">◆</span>
+      <span>Facial Volumetry</span><span class="dot">◆</span>
+      <span>Biostimulators</span><span class="dot">◆</span>
+      <span>Mesotherapy</span><span class="dot">◆</span>
+      <span>Dermal Fillers</span><span class="dot">◆</span>
+      <span>European Precision</span><span class="dot">◆</span>
+      <span>Natural Results</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+
+  <section id="about" class="about">
+    <div class="about-left rev">
+      <div class="section-label">About Us</div>
+      <h2>Aesthetic Expertise<br>You Can <em>Trust</em></h2>
+      <p>lifestyle Medical Spa is led by Katarzyna Marcinec, an internationally trained aesthetic practitioner known for
+        delivering natural, structured, and refined results. With extensive experience across Europe and the United
+        States, Katarzyna has trained at leading aesthetic institutions and has served as an instructor for aesthetic
+        academies in Europe.</p>
+      <p>Clients trust lifestyle Medical Spa because every treatment is customized to the individual, ensuring safe,
+        effective, and natural-looking outcomes.</p>
+      <div class="about-sig">
+        <img src="image2.webp" alt="Katarzyna Marcinec" class="sig-photo">
+        <div>
+          <strong>Katarzyna Marcinec</strong>
+          <span>Lead Practitioner & Founder</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-right rev d2">
+      <div class="about-mosaic">
+        <div class="am-large"><img src="image4.webp" alt="Aesthetic result"></div>
+        <div class="am-small top"><img src="thumbnail.jpg" alt="Precision treatment"></div>
+        <div class="am-small bottom"><img src="image5.webp" alt="Natural glow"></div>
+      </div>
+      <div class="about-stat-block">
+        <div class="asb-item">
+          <strong>10+</strong><span>Years of Expertise</span>
+        </div>
+        <div class="asb-div"></div>
+        <div class="asb-item">
+          <strong>EU</strong><span>Certified Protocols</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="mission-strip">
+    <div class="ms-img ms-video-box">
+      <div class="ms-slideshow" id="msSlideshow">
+        <video class="ms-slide ms-slide-vid active" autoplay muted loop playsinline>
+          <source src="lifestylevideo.mp4" type="video/mp4">
+        </video>
+        <img class="ms-slide" src="lifestyle3.jpg" alt="Lifestyle">
+        <img class="ms-slide" src="thumbnail2.jpg" alt="Treatment">
+      </div>
+    </div>
+    <div class="ms-content">
+      <div class="ms-quote">"Precision is not a technique.<br>It is a <em>philosophy.</em>"</div>
+      <div class="ms-pillars">
+        <div class="ms-pill"><span>Integrity</span>
+          <p>We only recommend what truly serves your long-term aesthetic goals.</p>
+        </div>
+        <div class="ms-pill"><span>Precision</span>
+          <p>Every injection is measured and placed with anatomical exactness.</p>
+        </div>
+        <div class="ms-pill"><span>Artistry</span>
+          <p>Aesthetic medicine as a fine art, focused on harmony and expression.</p>
+        </div>
+        <div class="ms-pill"><span>Safety</span>
+          <p>Strict clinical protocols ensure your health is never compromised.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="treatments" class="treatments">
+    <div class="treat-header rev">
+      <div>
+        <div class="section-label">Treatments</div>
+        <h2>Advanced Aesthetic <em>Treatments</em></h2>
+      </div>
+      <a href="#pricing" class="btn-gold-fill">View Pricing</a>
+    </div>
+    <div class="treat-grid">
+
+      <!-- Card 01 -->
+      <div class="tcard rev d1"
+        onclick="openTreatModal('image9.webp','Botox','Botox treatments help reduce wrinkles, soften facial lines, and prevent deeper expression lines while maintaining natural movement.','Full Forehead from','$300')">
+        <div class="tcard-img">
+          <img src="image9.webp" alt="Botox Treatment">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">01</div>
+          <h3>Botox</h3>
+          <p>Botox treatments help reduce wrinkles, soften facial lines, and prevent deeper expression lines while
+            maintaining natural movement.</p>
+          <div class="tcard-foot"><span>Full Forehead from</span><strong>$300</strong></div>
+        </div>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="tcard tcard-dark rev d2"
+        onclick="openTreatModal('lips.jpg','Lip Augmentation','Enhance lip shape, volume, and symmetry using advanced filler techniques for beautifully balanced, natural-looking lips.','Lip Flip from','$110')">
+        <div class="tcard-img">
+          <img src="lips.jpg" alt="Lip Augmentation">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">02</div>
+          <h3>Lip Augmentation</h3>
+          <p>Enhance lip shape, volume, and symmetry using advanced filler techniques for beautifully balanced,
+            natural-looking lips.</p>
+          <div class="tcard-foot"><span>Lip Flip from</span><strong>$110</strong></div>
+        </div>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="tcard rev d3"
+        onclick="openTreatModal('image7.webp','Facial Volumetry','Restore lost facial volume in the cheeks, jawline, and chin to create a more youthful and defined appearance.','Per Syringe from','$400')">
+        <div class="tcard-img">
+          <img src="image7.webp" alt="Facial Volumetry">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">03</div>
+          <h3>Facial Volumetry</h3>
+          <p>Restore lost facial volume in the cheeks, jawline, and chin to create a more youthful and defined
+            appearance.</p>
+          <div class="tcard-foot"><span>Per Syringe from</span><strong>$400</strong></div>
+        </div>
+      </div>
+
+      <!-- Card 04 -->
+      <div class="tcard rev d3"
+        onclick="openTreatModal('image6.webp','Mesotherapy','Delivers vitamins, nutrients, and active ingredients directly into the skin to rejuvenate and revitalize the complexion.','Face from','$250')">
+        <div class="tcard-img">
+          <img src="image6.webp" alt="Mesotherapy">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">04</div>
+          <h3>Mesotherapy</h3>
+          <p>Delivers vitamins, nutrients, and active ingredients directly into the skin to rejuvenate and revitalize
+            the complexion.</p>
+          <div class="tcard-foot"><span>Face from</span><strong>$250</strong></div>
+        </div>
+      </div>
+
+      <!-- Card 05 -->
+      <div class="tcard tcard-dark rev d4"
+        onclick="openTreatModal('image1.webp','Dermal Fillers','Premium fillers smooth wrinkles, restore volume, and sculpt facial features with precision using Juvederm, Restylane, or Belotero.','Per Syringe from','$400')">
+        <div class="tcard-img">
+          <img src="image1.webp" alt="Dermal Fillers">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">05</div>
+          <h3>Dermal Fillers</h3>
+          <p>Premium fillers smooth wrinkles, restore volume, and sculpt facial features with precision using Juvederm,
+            Restylane, or Belotero.</p>
+          <div class="tcard-foot"><span>Per Syringe from</span><strong>$400</strong></div>
+        </div>
+      </div>
+
+      <!-- Card 06 -->
+      <div class="tcard rev d1"
+        onclick="openTreatModal('image8.webp','Biostimulators','Stimulate natural collagen production, improving skin texture, elasticity, and overall facial structure for long-lasting regeneration.','Starting from','$300')">
+        <div class="tcard-img">
+          <img src="image8.webp" alt="Biostimulators">
+          <div class="tcard-play-overlay">
+            <div class="tcard-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M8 5v14l11-7z" />
+              </svg></div><span>View Details</span>
+          </div>
+        </div>
+        <div class="tcard-body">
+          <div class="tcard-num">06</div>
+          <h3>Biostimulators</h3>
+          <p>Stimulate natural collagen production, improving skin texture, elasticity, and overall facial structure for
+            long-lasting regeneration.</p>
+          <div class="tcard-foot"><span>Starting from</span><strong>$300</strong></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       TREATMENT MODAL — REDESIGNED
+  ═══════════════════════════════════════════════ -->
+  <div id="treatModal" class="tvm-backdrop" aria-hidden="true" onclick="closeTreatModal(event)">
+
+    <!-- Floating orbs -->
+    <div class="tvm-orb tvm-orb1"></div>
+    <div class="tvm-orb tvm-orb2"></div>
+
+    <div class="tvm-panel">
+
+      <!-- Decorative top edge -->
+      <div class="tvm-edge-top">
+        <div class="tvm-edge-line"></div>
+        <div class="tvm-edge-gem">◆</div>
+        <div class="tvm-edge-line"></div>
+      </div>
+
+      <!-- Close -->
+      <button class="tvm-close" onclick="closeTreatModal()" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <line x1="1" y1="1" x2="13" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="13" y1="1" x2="1" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Two-column layout -->
+      <div class="tvm-body">
+
+        <!-- Left: Image -->
+        <div class="tvm-img-col">
+          <div class="tvm-img-wrap">
+            <img id="tvmImage" src="" alt="">
+            <div class="tvm-img-shimmer"></div>
+            <div class="tvm-img-vignette"></div>
+          </div>
+          <!-- Floating price badge on image -->
+          <div class="tvm-img-badge">
+            <span id="tvmPriceLabel2"></span>
+            <strong id="tvmPrice2"></strong>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="tvm-content-col">
+          <div class="tvm-eyebrow">lifestyle Medical Spa</div>
+          <h3 id="tvmTitle" class="tvm-title"></h3>
+          <div class="tvm-divider">
+            <span class="tvm-div-line"></span>
+            <span class="tvm-div-dot">◆</span>
+            <span class="tvm-div-line"></span>
+          </div>
+          <p id="tvmDesc" class="tvm-desc"></p>
+
+          <!-- Feature pills -->
+          <div class="tvm-features">
+            <span class="tvm-feat">✦ European Technique</span>
+            <span class="tvm-feat">✦ Natural Results</span>
+            <span class="tvm-feat">✦ FDA-Approved Products</span>
+          </div>
+
+          <!-- Price row -->
+          <div class="tvm-price-row">
+            <div class="tvm-price-info">
+              <span class="tvm-price-label" id="tvmPriceLabel"></span>
+              <strong class="tvm-price-val" id="tvmPrice"></strong>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a href="#contact" class="tvm-cta-btn" onclick="closeTreatModal()">
+            <span>Book This Treatment</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <p class="tvm-note">Free consultation included · No obligation</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom edge -->
+      <div class="tvm-edge-bottom">
+        <div class="tvm-edge-line"></div>
+        <div class="tvm-edge-dot"></div>
+        <div class="tvm-edge-line"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    /* ═══════════════════════════════════════
+       TREATMENT MODAL — REDESIGNED STYLES
+    ═══════════════════════════════════════ */
+
+    /* Backdrop */
+    .tvm-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      background: rgba(5, 3, 1, 0);
+      backdrop-filter: blur(0px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      pointer-events: none;
+      transition: background .5s ease, backdrop-filter .5s ease;
+    }
+    .tvm-backdrop.open {
+      background: rgba(5, 3, 1, .82);
+      backdrop-filter: blur(14px);
+      pointer-events: all;
+    }
+
+    /* Floating orbs */
+    .tvm-orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .6s ease;
+    }
+    .tvm-backdrop.open .tvm-orb { opacity: 1; }
+    .tvm-orb1 {
+      width: 500px; height: 500px;
+      top: -150px; left: -150px;
+      background: radial-gradient(circle, rgba(201,169,110,.08) 0%, transparent 70%);
+      animation: orbDrift1 12s ease-in-out infinite;
+    }
+    .tvm-orb2 {
+      width: 400px; height: 400px;
+      bottom: -100px; right: -100px;
+      background: radial-gradient(circle, rgba(201,169,110,.06) 0%, transparent 70%);
+      animation: orbDrift2 15s ease-in-out infinite;
+    }
+    @keyframes orbDrift1 {
+      0%,100% { transform: translate(0,0); }
+      50% { transform: translate(40px, 30px); }
+    }
+    @keyframes orbDrift2 {
+      0%,100% { transform: translate(0,0); }
+      50% { transform: translate(-30px, -40px); }
+    }
+
+    /* Panel */
+    .tvm-panel {
+      position: relative;
+      background: linear-gradient(145deg, #0f0b07 0%, #0a0602 60%, #120e08 100%);
+      border: 1px solid rgba(201,169,110,.18);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 920px;
+      max-height: 90vh;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(40px) scale(.97);
+      transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1);
+      box-shadow:
+        0 40px 100px rgba(0,0,0,.7),
+        0 0 0 1px rgba(201,169,110,.08),
+        inset 0 1px 0 rgba(201,169,110,.1);
+    }
+    .tvm-backdrop.open .tvm-panel {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Decorative edges */
+    .tvm-edge-top, .tvm-edge-bottom {
+      display: flex;
+      align-items: center;
+      padding: 0 28px;
+      height: 36px;
+      gap: 0;
+    }
+    .tvm-edge-top { border-bottom: 1px solid rgba(201,169,110,.08); }
+    .tvm-edge-bottom { border-top: 1px solid rgba(201,169,110,.08); }
+    .tvm-edge-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,169,110,.3), transparent);
+    }
+    .tvm-edge-gem, .tvm-edge-dot {
+      color: var(--gold, #c9a96e);
+      font-size: .55rem;
+      padding: 0 12px;
+      opacity: .7;
+    }
+
+    /* Close button */
+    .tvm-close {
+      position: absolute;
+      top: 10px; right: 16px;
+      width: 32px; height: 32px;
+      border: 1px solid rgba(201,169,110,.18);
+      border-radius: 50%;
+      background: rgba(201,169,110,.06);
+      color: rgba(245,237,224,.5);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 10;
+      transition: all .25s ease;
+    }
+    .tvm-close:hover {
+      background: rgba(201,169,110,.14);
+      border-color: rgba(201,169,110,.4);
+      color: var(--gold, #c9a96e);
+      transform: rotate(90deg);
+    }
+
+    /* Two-column body */
+    .tvm-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 420px;
+      max-height: calc(90vh - 72px);
+    }
+
+    /* Image column */
+    .tvm-img-col {
+      position: relative;
+      overflow: hidden;
+    }
+    .tvm-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+    }
+    .tvm-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.04);
+      transition: transform 1.2s cubic-bezier(.22,1,.36,1);
+    }
+    .tvm-backdrop.open .tvm-img-wrap img {
+      transform: scale(1);
+    }
+    /* Shimmer sweep on open */
+    .tvm-img-shimmer {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.08) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0s;
+    }
+    .tvm-backdrop.open .tvm-img-shimmer {
+      transition: transform 1s ease .3s;
+      transform: translateX(100%);
+    }
+    .tvm-img-vignette {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, transparent 60%, #0a0602 100%),
+        linear-gradient(to bottom, transparent 70%, rgba(10,6,2,.5) 100%);
+      pointer-events: none;
+    }
+    /* Price badge on image */
+    .tvm-img-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(10,6,2,.75);
+      border: 1px solid rgba(201,169,110,.25);
+      backdrop-filter: blur(8px);
+      border-radius: 2px;
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .4s ease .6s, transform .4s ease .6s;
+    }
+    .tvm-backdrop.open .tvm-img-badge {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tvm-img-badge span {
+      font-family: 'Jost', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(245,237,224,.5);
+    }
+    .tvm-img-badge strong {
+      font-family: 'Italiana', serif;
+      font-size: 1.5rem;
+      color: var(--gold, #c9a96e);
+      line-height: 1;
+    }
+
+    /* Content column */
+    .tvm-content-col {
+      padding: 36px 36px 30px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+    .tvm-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold, #c9a96e);
+      margin-bottom: 14px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .4s ease .2s, transform .4s ease .2s;
+    }
+    .tvm-backdrop.open .tvm-eyebrow { opacity: 1; transform: translateY(0); }
+
+    .tvm-title {
+      font-family: 'Italiana', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: #f5ede0;
+      line-height: 1.1;
+      margin-bottom: 18px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .45s ease .3s, transform .45s ease .3s;
+    }
+    .tvm-backdrop.open .tvm-title { opacity: 1; transform: translateY(0); }
+
+    .tvm-divider {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 20px;
+      opacity: 0;
+      transition: opacity .4s ease .4s;
+    }
+    .tvm-backdrop.open .tvm-divider { opacity: 1; }
+    .tvm-div-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(201,169,110,.2);
+    }
+    .tvm-div-dot {
+      color: var(--gold, #c9a96e);
+      font-size: .5rem;
+      padding: 0 10px;
+      opacity: .6;
+    }
+
+    .tvm-desc {
+      font-family: 'Jost', sans-serif;
+      font-size: .85rem;
+      color: rgba(245,237,224,.55);
+      line-height: 1.75;
+      letter-spacing: .01em;
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .4s ease .45s, transform .4s ease .45s;
+    }
+    .tvm-backdrop.open .tvm-desc { opacity: 1; transform: translateY(0); }
+
+    /* Feature pills */
+    .tvm-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .4s ease .5s, transform .4s ease .5s;
+    }
+    .tvm-backdrop.open .tvm-features { opacity: 1; transform: translateY(0); }
+    .tvm-feat {
+      font-family: 'Jost', sans-serif;
+      font-size: .67rem;
+      letter-spacing: .12em;
+      color: rgba(201,169,110,.65);
+      border: 1px solid rgba(201,169,110,.15);
+      border-radius: 20px;
+      padding: 5px 12px;
+      transition: all .25s ease;
+      cursor: default;
+    }
+    .tvm-feat:hover {
+      color: var(--gold, #c9a96e);
+      border-color: rgba(201,169,110,.4);
+      background: rgba(201,169,110,.05);
+    }
+
+    /* Price row */
+    .tvm-price-row {
+      margin-bottom: 24px;
+      padding: 16px 20px;
+      background: rgba(201,169,110,.04);
+      border: 1px solid rgba(201,169,110,.12);
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .4s ease .55s, transform .4s ease .55s;
+    }
+    .tvm-backdrop.open .tvm-price-row { opacity: 1; transform: translateY(0); }
+    .tvm-price-info {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .tvm-price-label {
+      font-family: 'Jost', sans-serif;
+      font-size: .7rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(245,237,224,.4);
+    }
+    .tvm-price-val {
+      font-family: 'Italiana', serif;
+      font-size: 2rem;
+      color: var(--gold, #c9a96e);
+      line-height: 1;
+    }
+
+    /* CTA button */
+    .tvm-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, var(--gold, #c9a96e) 0%, #b8914a 100%);
+      color: #0a0602;
+      font-family: 'Jost', sans-serif;
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 1px;
+      transition: all .3s ease;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .4s ease .6s, transform .4s ease .6s, background .25s ease, box-shadow .25s ease;
+      margin-bottom: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .tvm-cta-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.15) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform .5s ease;
+    }
+    .tvm-cta-btn:hover::before { transform: translateX(100%); }
+    .tvm-cta-btn:hover {
+      background: linear-gradient(135deg, #d4b87a 0%, #c9a96e 100%);
+      box-shadow: 0 8px 30px rgba(201,169,110,.35);
+      transform: translateY(-2px) !important;
+    }
+    .tvm-backdrop.open .tvm-cta-btn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tvm-note {
+      font-family: 'Jost', sans-serif;
+      font-size: .66rem;
+      letter-spacing: .1em;
+      color: rgba(245,237,224,.25);
+      text-align: center;
+      opacity: 0;
+      transition: opacity .4s ease .7s;
+    }
+    .tvm-backdrop.open .tvm-note { opacity: 1; }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .tvm-body { grid-template-columns: 1fr; }
+      .tvm-img-wrap { min-height: 260px; max-height: 300px; }
+      .tvm-img-vignette {
+        background:
+          linear-gradient(to bottom, transparent 50%, #0a0602 100%);
+      }
+      .tvm-content-col { padding: 24px 22px 20px; }
+      .tvm-title { font-size: 1.7rem; }
+    }
+  </style>
+
+  <section id="why-euro" class="why-euro">
+    <div class="we-img-col rev">
+      <img src="medicine.jpg" alt="European Precision" class="we-main-img">
+      <div class="we-badge"><img class="we-badge-logo" src="logo.png" alt="European Standards"></div>
+    </div>
+    <div class="we-text-col rev d2">
+      <div class="section-label">Why European Aesthetics</div>
+      <h2>The European Standard<br>in Aesthetic <em>Medicine</em></h2>
+      <p>In Europe, aesthetic procedures follow stricter clinical regulations and a deeper respect for facial anatomy.
+        Neurotoxins such as Botox are treated as precise therapeutic tools — not mass-market cosmetic products. Many
+        clinics prioritize revenue over quality, which can lead to over-diluted neurotoxins, artificial results, and
+        shorter-lasting treatments.</p>
+      <p
+        style="font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:10px;margin-top:24px;">
+        Our Approach</p>
+      <ul class="we-list">
+        <li>Full-strength pharmaceutical products</li>
+        <li>Anatomical facial mapping</li>
+        <li>Targeted injections only where medically needed</li>
+        <li>Natural and expressive results</li>
+        <li>Longer-lasting treatments</li>
+      </ul>
+      <div class="we-compare">
+        <div class="wec-row wec-head">
+          <span></span><span>Typical US</span><span>lifestyle</span>
+        </div>
+        <div class="wec-row">
+          <span>Dilution</span><span class="neg">Over-diluted</span><span class="pos">Full-strength</span>
+        </div>
+        <div class="wec-row">
+          <span>Precision</span><span class="neg">One-size-fits-all</span><span class="pos">Anatomical mapping</span>
+        </div>
+        <div class="wec-row">
+          <span>Results last</span><span class="neg">2–4 months</span><span class="pos">4–6 months</span>
+        </div>
+        <div class="wec-row">
+          <span>Outcome</span><span class="neg">Frozen / overfilled</span><span class="pos">Natural & refined</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="pricing-head rev">
+      <div class="section-label">Pricing</div>
+      <h2>Injectable <em>Treatments</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="pcol rev d1">
+        <div class="pcol-head">Neuromodulators</div>
+        <div class="prow"><span>Full Forehead (2 Areas)</span><strong>$300</strong></div>
+        <div class="prow"><span>3 Areas (Forehead + Eyes)</span><strong>$400</strong></div>
+        <div class="prow"><span>Lip Flip</span><strong>$110</strong></div>
+      </div>
+      <div class="pcol pcol-highlight rev d2">
+        <div class="pcol-head">Fillers by Syringe 1ml</div>
+        <div class="prow"><span>Belotero</span><strong>$420</strong></div>
+        <div class="prow"><span>Juvederm</span><strong>$400</strong></div>
+        <div class="prow"><span>Restylane</span><strong>$400</strong></div>
+        <div class="prow"><span>Radiesse</span><strong>$450</strong></div>
+        <div class="prow"><span>Sculptra</span><strong>$500</strong></div>
+        <div class="prow"><span>Skinvive</span><strong>$300</strong></div>
+      </div>
+      <div class="pcol rev d3">
+        <div class="pcol-head">Biostimulators &amp; Meso</div>
+        <div class="prow"><span>Hair Restoration</span><strong>$300</strong></div>
+        <div class="prow"><span>Bio Stimulator Face Rejuran</span><strong>$400</strong></div>
+        <div class="prow"><span>Under Eyes Rejuran</span><strong>$300</strong></div>
+        <div class="prow"><span>Mesotherapy — Face</span><strong>$250</strong></div>
+        <div class="prow"><span>Meso — Face, Neck, Décolleté</span><strong>$400</strong></div>
+        <div class="prow"><span>Dissolve Filler (from)</span><strong>$150</strong></div>
+      </div>
+    </div>
+    <div class="pricing-note rev">Multi-syringe discounts available. Book a consultation to discuss your personalised
+      plan.</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       AESTHETIC GALLERY SHOWCASE
+  ═══════════════════════════════════════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="gs-bg-deco"></div>
+
+    <div class="gs-header rev">
+
+      <!-- Scattered gold particles (CSS only) -->
+      <div class="gsh-particles" aria-hidden="true">
+        <span class="gsh-p gsh-p1">◆</span>
+        <span class="gsh-p gsh-p2">✦</span>
+        <span class="gsh-p gsh-p3">◇</span>
+        <span class="gsh-p gsh-p4">✦</span>
+        <span class="gsh-p gsh-p5">◆</span>
+        <span class="gsh-p gsh-p6">◇</span>
+      </div>
+
+      <!-- Eyebrow pill -->
+      <div class="gsh-pill">
+        <span class="gsh-pill-dot"></span>
+        <span class="gsh-pill-text">Gallery</span>
+        <span class="gsh-pill-dot"></span>
+      </div>
+
+      <!-- Massive split title -->
+      <div class="gsh-title-wrap">
+        <!-- Outline ghost text behind -->
+        <span class="gsh-title-ghost" aria-hidden="true">Precision</span>
+        <!-- Foreground layered title -->
+        <h2 class="gsh-title-main">
+          <span class="gsh-line-top">The Art <span class="gsh-line-top-of">of</span></span>
+          <span class="gsh-line-bottom"><em>Precision</em></span>
+        </h2>
+      </div>
+
+      <!-- Subtitle — cinematic style -->
+      <div class="gsh-sub-wrap">
+        <div class="gsh-sub-left-mark">
+          <span class="gsh-slm-line"></span>
+          <span class="gsh-slm-num">01</span>
+        </div>
+        <p class="gsh-subtitle-text">
+          Each image captures a moment of refined technique<br>
+          <em>and natural transformation.</em>
+        </p>
+        <div class="gsh-sub-right-mark">
+          <span class="gsh-slm-num">—</span>
+          <span class="gsh-slm-line"></span>
+        </div>
+      </div>
+
+      <!-- Animated divider -->
+      <div class="gsh-divider">
+        <span class="gsh-div-line gsh-div-l"></span>
+        <span class="gsh-div-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 2 L16 12 L26 14 L16 16 L14 26 L12 16 L2 14 L12 12 Z" stroke="currentColor" stroke-width="1" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="gsh-div-line gsh-div-r"></span>
+      </div>
+
+    </div>
+
+
+    <!-- Main Cinematic Viewer -->
+    <div class="gs-viewer">
+      <div class="gs-main" id="gsMain">
+        <div class="gs-slide active" data-idx="0">
+          <img src="image3.webp" alt="Lip Filler Precision">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Lip Augmentation</span>
+            <p>Precision micro-injection technique for natural, balanced results.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="1">
+          <img src="image2.webp" alt="Katarzyna Marcinec">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Master Injector</span>
+            <p>Katarzyna Marcinec — European-trained aesthetic specialist.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="2">
+          <img src="image6.webp" alt="Facial Filler Treatment">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Facial Volumetry</span>
+            <p>Anatomical mapping for sculpted, expressive facial contours.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="3">
+          <img src="image7.webp" alt="Hair Restoration">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Hair Restoration</span>
+            <p>Targeted scalp injections for biostimulation and hair regrowth.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="4">
+          <img src="image8.webp" alt="Under Eye Treatment">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Dermal Fillers</span>
+            <p>Delicate under-eye treatment with ultra-fine precision needles.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="5">
+          <img src="image9.webp" alt="Lip Filler">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Lip Enhancement</span>
+            <p>Subtle volume and definition for harmonious lip structure.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="6">
+          <img src="image5.webp" alt="Mesotherapy Treatment">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Mesotherapy</span>
+            <p>Expert placement for sculpted, harmonious facial features.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="7">
+          <img src="image10.webp" alt="Botox Treatment">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Botox Precision</span>
+            <p>Anatomical precision for smooth, natural-looking results.</p>
+          </div>
+        </div>
+        <div class="gs-slide" data-idx="8">
+          <img src="lifestyle3.jpg" alt="Lifestyle Results">
+          <div class="gs-slide-caption">
+            <span class="gs-cap-tag">Natural Radiance</span>
+            <p>Beautifully refined results tailored to each individual.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev / Next -->
+      <button class="gs-arrow gs-prev" id="gsPrev" aria-label="Previous">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M11 3L5 9l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="gs-arrow gs-next" id="gsNext" aria-label="Next">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M7 3l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <!-- Progress bar -->
+      <div class="gs-progress">
+        <div class="gs-progress-bar" id="gsProgressBar"></div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Strip -->
+    <div class="gs-strip" id="gsStrip">
+      <div class="gs-thumb active" data-idx="0">
+        <img src="image3.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="1">
+        <img src="image2.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="2">
+        <img src="image6.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="3">
+        <img src="image7.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="4">
+        <img src="image8.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="5">
+        <img src="image9.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="6">
+        <img src="image5.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="7">
+        <img src="image10.webp" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+      <div class="gs-thumb" data-idx="8">
+        <img src="lifestyle3.jpg" alt="">
+        <div class="gs-thumb-shine"></div>
+      </div>
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="gs-dots" id="gsDots">
+      <span class="gs-dot active"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+      <span class="gs-dot"></span>
+    </div>
+
+  </section>
+
+  <section class="meet">
+    <div class="meet-img-col meet-portrait-col">
+      <img src="imaeg19.jpg" alt="Katarzyna Marcinec" class="meet-portrait-img">
+      <div class="meet-img-overlay"></div>
+    </div>
+    <div class="meet-text-col rev d2">
+      <div class="section-label">Your Practitioner</div>
+      <h2>Katarzyna<br><em>Marcinec</em></h2>
+      <p>Katarzyna Marcinec is not only a highly experienced aesthetic specialist but also an educator and trainer in
+        Europe, teaching advanced aesthetic techniques to other medical professionals. Through ongoing training,
+        international certifications, and hands-on instruction, she remains deeply connected to the latest innovations
+        in aesthetic medicine.</p>
+      <p>Her expertise includes advanced facial anatomy and muscle mapping, correcting improperly performed treatments,
+        precision neurotoxin injections, and subtle facial contour restoration.</p>
+      <div class="meet-creds">
+        <div class="mc-item">
+          <div class="mc-num">10+</div>
+          <div>Years in Medical Aesthetics</div>
+        </div>
+        <div class="mc-item">
+          <div class="mc-num">EU</div>
+          <div>Certified Educator & Trainer</div>
+        </div>
+        <div class="mc-item">
+          <div class="mc-num">★</div>
+          <div>International Certifications</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn-gold-fill">Book with Katarzyna</a>
+    </div>
+  </section>
+
+  <section id="aftercare" class="aftercare-v2">
+
+    <!-- Background texture -->
+    <div class="av2-bg-texture"></div>
+
+    <!-- Header -->
+    <div class="av2-header rev">
+
+      <!-- Background watermark number -->
+      <span class="av2h-watermark" aria-hidden="true">08</span>
+
+      <!-- Top tag row -->
+      <div class="av2h-tag-row">
+        <span class="av2h-tag-line"></span>
+        <span class="av2h-tag-capsule">
+          <span class="av2h-tag-pulse"></span>
+          Post-Treatment Care
+        </span>
+        <span class="av2h-tag-line"></span>
+      </div>
+
+      <!-- Massive stacked display title -->
+      <div class="av2h-display">
+        <div class="av2h-display-row1">
+          <span class="av2h-d-outline" aria-hidden="true">Post</span>
+          <span class="av2h-d-solid">Post</span>
+        </div>
+        <div class="av2h-display-row2">
+          <span class="av2h-d-outline" aria-hidden="true">Treatment</span>
+          <span class="av2h-d-solid av2h-d-mid">Treatment</span>
+        </div>
+        <div class="av2h-display-row3">
+          <em class="av2h-d-em">Instructions</em>
+        </div>
+      </div>
+
+      <!-- Subtitle -->
+      <div class="av2h-meta">
+        <div class="av2h-meta-mark">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M9 1 L10.5 7.5 L17 9 L10.5 10.5 L9 17 L7.5 10.5 L1 9 L7.5 7.5 Z" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity=".15" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="av2h-meta-text">
+          Your results deserve the best care. Follow these steps to ensure
+          <em>optimal healing and lasting beauty.</em>
+        </p>
+        <div class="av2h-meta-mark">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M9 1 L10.5 7.5 L17 9 L10.5 10.5 L9 17 L7.5 10.5 L1 9 L7.5 7.5 Z" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity=".15" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Step count badge -->
+      <div class="av2h-count-row">
+        <span class="av2h-count-item">
+          <strong>08</strong>
+          <span>Essential Steps</span>
+        </span>
+        <span class="av2h-count-div"></span>
+        <span class="av2h-count-item">
+          <strong>2 wk</strong>
+          <span>Recovery Period</span>
+        </span>
+        <span class="av2h-count-div"></span>
+        <span class="av2h-count-item">
+          <strong>EU</strong>
+          <span>Protocol Standard</span>
+        </span>
+      </div>
+
+    </div>
+
+    <!-- Cards grid -->
+    <div class="av2-grid">
+
+      <div class="av2-card" data-delay="0">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">01</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C24 8 14 16 14 26a10 10 0 0020 0C34 16 24 8 24 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 32v4M20 36h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor" opacity=".4"/>
+            </svg>
+          </div>
+          <h4>Avoid Touching<br>Injection Sites</h4>
+          <p>Do not massage, rub, or apply pressure to treated areas for at least 24 hours after the procedure.</p>
+          <div class="av2-card-tag">24 hrs</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="1">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">02</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12v8M32 16l-6 6M16 16l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="24" cy="30" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 30h8M24 26v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </div>
+          <h4>Avoid Physical<br>Activity</h4>
+          <p>Avoid strenuous exercise or heavy lifting for 24 hours after treatment.</p>
+          <div class="av2-card-tag">24 hrs</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="2">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">03</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 12V8M30 14l3-3M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M18 36h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </div>
+          <h4>Avoid Heat<br>Exposure</h4>
+          <p>Avoid saunas, tanning beds, hot tubs, and excessive sun exposure for two weeks after treatment.</p>
+          <div class="av2-card-tag">2 weeks</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="3">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">04</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 10c0 0-6 8-6 16a10 10 0 0020 0c0-8-6-16-6-16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 26c0 4.418 3.582 8 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+              <path d="M30 14l4-4M34 14l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Avoid<br>Alcohol</h4>
+          <p>Do not consume alcohol for 24 hours after the procedure to minimize swelling and bruising.</p>
+          <div class="av2-card-tag">24 hrs</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="4">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">05</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="24" cy="26" rx="10" ry="12" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 14v-4M18 16l-2-3M30 16l2-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M18 28c1 3 3 5 6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+              <path d="M28 10l4-4M32 10l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>No Makeup<br>for 24 Hours</h4>
+          <p>Avoid applying makeup for the first 24 hours to reduce risk of irritation and infection.</p>
+          <div class="av2-card-tag">24 hrs</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="5">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">06</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 20c0 0 2-6 8-6s8 6 8 6v14a4 4 0 01-4 4H20a4 4 0 01-4-4V20z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M20 28c0 2 2 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
+              <path d="M24 14v-4M28 16l2-2M20 16l-2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4>Skin<br>Moisturization</h4>
+          <p>Use gentle, fragrance-free moisturizers to support healing. Avoid retinoids or AHA/BHA acids.</p>
+          <div class="av2-card-tag">Essential</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card" data-delay="6">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow"></div>
+          <div class="av2-card-num">07</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 10c-6.627 0-12 5.373-12 12 0 4 2 7.5 5 9.5V36h14v-4.5c3-2 5-5.5 5-9.5 0-6.627-5.373-12-12-12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M20 36v2a2 2 0 104 0v-2M24 22v4M22 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+            </svg>
+          </div>
+          <h4>Arnica<br>Ointment</h4>
+          <p>Apply arnica ointment to reduce bruising or swelling if necessary following your treatment.</p>
+          <div class="av2-card-tag">If needed</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+      <div class="av2-card av2-card-highlight" data-delay="7">
+        <div class="av2-card-inner">
+          <div class="av2-card-glow av2-card-glow-gold"></div>
+          <div class="av2-card-num">08</div>
+          <div class="av2-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="28" height="26" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 20h28M18 10v8M30 10v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M16 28h6M16 33h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/>
+              <circle cx="35" cy="35" r="7" fill="var(--gold,#c9a96e)" fill-opacity=".15" stroke="var(--gold,#c9a96e)" stroke-width="1.2"/>
+              <path d="M32 35l2 2 4-4" stroke="var(--gold,#c9a96e)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4>Follow-Up<br>Appointment</h4>
+          <p>A follow-up visit is recommended two weeks after treatment. For severe symptoms — contact your provider immediately.</p>
+          <div class="av2-card-tag av2-card-tag-gold">2 weeks</div>
+          <div class="av2-card-border-anim"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom note -->
+    <div class="av2-footnote rev">
+      <div class="av2-fn-line"></div>
+      <p>Questions about your aftercare? <a href="#contact">Contact us anytime →</a></p>
+      <div class="av2-fn-line"></div>
+    </div>
+
+  </section>
+
+  <style>
+    /* ═══════════════════════════════════════
+       AFTERCARE V2 — REDESIGNED
+    ═══════════════════════════════════════ */
+    .aftercare-v2 {
+      position: relative;
+      padding: 120px 60px 100px;
+      background: #0a0602;
+      overflow: hidden;
+    }
+
+    /* Subtle grain texture bg */
+    .av2-bg-texture {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,169,110,.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,169,110,.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .av2-bg-texture::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: .4;
+    }
+
+    /* Header */
+    .av2-header {
+      text-align: center;
+      margin-bottom: 70px;
+      position: relative;
+      z-index: 2;
+    }
+    .av2-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-family: 'Jost', sans-serif;
+      font-size: .7rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--gold, #c9a96e);
+      margin-bottom: 18px;
+    }
+    .av2-label-line {
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold, #c9a96e);
+      opacity: .5;
+    }
+    .av2-title {
+      font-family: 'Italiana', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      color: #f5ede0;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .av2-title em {
+      font-style: italic;
+      color: var(--gold, #c9a96e);
+    }
+    .av2-subtitle {
+      font-family: 'Jost', sans-serif;
+      font-size: .9rem;
+      color: rgba(245,237,224,.45);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+      letter-spacing: .02em;
+    }
+
+    /* Grid */
+    .av2-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      position: relative;
+      z-index: 2;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    /* Cards */
+    .av2-card {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .av2-card.av2-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .av2-card-inner {
+      position: relative;
+      background: rgba(255,255,255,.032);
+      border: 1px solid rgba(201,169,110,.12);
+      border-radius: 2px;
+      padding: 32px 26px 28px;
+      height: 100%;
+      overflow: hidden;
+      cursor: default;
+      transition:
+        background .4s ease,
+        border-color .4s ease,
+        transform .4s cubic-bezier(.22,1,.36,1),
+        box-shadow .4s ease;
+    }
+    .av2-card:hover .av2-card-inner {
+      background: rgba(201,169,110,.06);
+      border-color: rgba(201,169,110,.38);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.45), 0 0 0 1px rgba(201,169,110,.1);
+    }
+
+    /* Glow blob */
+    .av2-card-glow {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,169,110,.12) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity .4s ease, transform .4s ease;
+    }
+    .av2-card:hover .av2-card-glow {
+      opacity: 1;
+      transform: scale(1.3);
+    }
+    .av2-card-glow-gold {
+      background: radial-gradient(circle, rgba(201,169,110,.22) 0%, transparent 70%);
+    }
+
+    /* Animated border sweep on hover */
+    .av2-card-border-anim {
+      position: absolute;
+      inset: 0;
+      border-radius: 2px;
+      pointer-events: none;
+    }
+    .av2-card-border-anim::before,
+    .av2-card-border-anim::after {
+      content: '';
+      position: absolute;
+      background: var(--gold, #c9a96e);
+      opacity: 0;
+      transition: opacity .3s ease, width .5s ease, height .5s ease;
+    }
+    /* top-left corner lines */
+    .av2-card-border-anim::before {
+      top: 0; left: 0;
+      width: 0; height: 1px;
+    }
+    .av2-card-border-anim::after {
+      top: 0; left: 0;
+      width: 1px; height: 0;
+    }
+    .av2-card:hover .av2-card-border-anim::before {
+      opacity: .7; width: 40%;
+    }
+    .av2-card:hover .av2-card-border-anim::after {
+      opacity: .7; height: 40%;
+    }
+
+    /* Number */
+    .av2-card-num {
+      font-family: 'Italiana', serif;
+      font-size: 3rem;
+      color: rgba(201,169,110,.1);
+      line-height: 1;
+      margin-bottom: 16px;
+      transition: color .4s ease;
+      user-select: none;
+    }
+    .av2-card:hover .av2-card-num {
+      color: rgba(201,169,110,.22);
+    }
+
+    /* Icon */
+    .av2-card-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 20px;
+      color: rgba(201,169,110,.55);
+      transition: color .4s ease, transform .4s cubic-bezier(.22,1,.36,1);
+    }
+    .av2-card-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    .av2-card:hover .av2-card-icon {
+      color: var(--gold, #c9a96e);
+      transform: scale(1.1) rotate(-4deg);
+    }
+
+    /* Text */
+    .av2-card-inner h4 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.20rem;
+      font-weight: 500;
+      color: #f0e6d3;
+      margin-bottom: 12px;
+      line-height: 1.35;
+      transition: color .3s;
+    }
+    .av2-card:hover .av2-card-inner h4 {
+      color: #fff;
+    }
+    .av2-card-inner p {
+      font-family: 'Jost', sans-serif;
+      font-size: 1rem;
+      color: rgba(245,237,224,.42);
+      line-height: 1.7;
+      letter-spacing: .01em;
+      transition: color .3s;
+    }
+    .av2-card:hover .av2-card-inner p {
+      color: rgba(245,237,224,.65);
+    }
+
+    /* Time tag */
+    .av2-card-tag {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 4px 12px;
+      font-family: 'Jost', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(201,169,110,.55);
+      border: 1px solid rgba(201,169,110,.15);
+      border-radius: 20px;
+      transition: color .3s, border-color .3s, background .3s;
+    }
+    .av2-card:hover .av2-card-tag {
+      color: var(--gold, #c9a96e);
+      border-color: rgba(201,169,110,.45);
+      background: rgba(201,169,110,.06);
+    }
+    .av2-card-tag-gold {
+      color: var(--gold, #c9a96e) !important;
+      border-color: rgba(201,169,110,.3) !important;
+    }
+
+    /* Highlight card (08) */
+    .av2-card-highlight .av2-card-inner {
+      background: rgba(201,169,110,.04);
+      border-color: rgba(201,169,110,.2);
+    }
+    .av2-card-highlight:hover .av2-card-inner {
+      background: rgba(201,169,110,.1);
+      border-color: rgba(201,169,110,.55);
+      box-shadow: 0 24px 60px rgba(0,0,0,.5), 0 0 30px rgba(201,169,110,.08);
+    }
+
+    /* Footnote */
+    .av2-footnote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 64px;
+      position: relative;
+      z-index: 2;
+    }
+    .av2-fn-line {
+      flex: 1;
+      max-width: 200px;
+      height: 1px;
+      background: rgba(201,169,110,.15);
+    }
+    .av2-footnote p {
+      font-family: 'Jost', sans-serif;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      color: rgba(245,237,224,.35);
+      white-space: nowrap;
+    }
+    .av2-footnote a {
+      color: var(--gold, #c9a96e);
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .av2-footnote a:hover { opacity: .7; }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .av2-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 780px) {
+      .aftercare-v2 { padding: 80px 24px 70px; }
+      .av2-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    }
+    @media (max-width: 500px) {
+      .av2-grid { grid-template-columns: 1fr; }
+      .av2-footnote { flex-direction: column; gap: 12px; }
+      .av2-fn-line { display: none; }
+    }
+  </style>
+
+  <style>
+  /* ═══════════════════════════════════════════════════
+     GALLERY HEADER — FULL REDESIGN v2
+  ═══════════════════════════════════════════════════ */
+
+  .gs-header {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 60px 40px 0;
+    position: relative;
+    overflow: visible;
+  }
+
+  /* Floating particles */
+  .gsh-particles { position: absolute; inset: 0; pointer-events: none; }
+  .gsh-p {
+    position: absolute;
+    font-size: .55rem;
+    color: var(--gold, #c9a96e);
+    opacity: 0;
+    animation: gshParticle 6s ease-in-out infinite;
+  }
+  .gsh-p1 { top: 10%; left: 8%;  animation-delay: 0s;    font-size: .5rem; }
+  .gsh-p2 { top: 20%; right: 10%; animation-delay: 1.2s; font-size: .7rem; }
+  .gsh-p3 { top: 55%; left: 5%;  animation-delay: 2.4s; }
+  .gsh-p4 { top: 70%; right: 7%; animation-delay: 0.8s; font-size: .45rem; }
+  .gsh-p5 { top: 35%; left: 12%; animation-delay: 1.8s; font-size: .6rem; }
+  .gsh-p6 { top: 80%; right: 14%; animation-delay: 3s; }
+  @keyframes gshParticle {
+    0%   { opacity: 0;   transform: translateY(0) scale(.8); }
+    30%  { opacity: .6; }
+    60%  { opacity: .3; transform: translateY(-14px) scale(1.1); }
+    100% { opacity: 0;   transform: translateY(-24px) scale(.7); }
+  }
+
+  /* Eyebrow pill */
+  .gsh-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 20px;
+    border: 1px solid rgba(201,169,110,.22);
+    border-radius: 40px;
+    margin-bottom: 40px;
+    background: rgba(201,169,110,.04);
+    backdrop-filter: blur(4px);
+  }
+  .gsh-pill-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--gold, #c9a96e);
+    opacity: .7;
+    animation: gshPillPulse 2s ease-in-out infinite;
+  }
+  .gsh-pill-dot:last-child { animation-delay: 1s; }
+  @keyframes gshPillPulse {
+    0%,100% { transform: scale(1); opacity: .7; }
+    50% { transform: scale(1.6); opacity: 1; }
+  }
+  .gsh-pill-text {
+    font-family: 'Jost', sans-serif;
+    font-size: .65rem;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    color: var(--gold, #c9a96e);
+  }
+
+  /* Title wrapper — layered ghost + real */
+  .gsh-title-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 36px;
+    line-height: 1;
+  }
+  /* Giant ghost outline watermark */
+  .gsh-title-ghost {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Italiana', serif;
+    font-size: clamp(5rem, 14vw, 13rem);
+    font-style: italic;
+    letter-spacing: -.02em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201,169,110,.07);
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+    transform: translateY(10px);
+  }
+  /* Foreground title */
+  .gsh-title-main {
+    font-family: 'Italiana', serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .gsh-line-top {
+    display: block;
+    font-size: clamp(2rem, 4.5vw, 4.5rem);
+    color: rgba(245,237,224,.38);
+    letter-spacing: .12em;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  .gsh-line-top-of {
+    font-style: italic;
+    color: rgba(201,169,110,.5);
+    margin-left: .12em;
+  }
+  .gsh-line-bottom {
+    display: block;
+  }
+  .gsh-line-bottom em {
+    font-style: italic;
+    font-size: clamp(4.5rem, 11vw, 10rem);
+    line-height: .88;
+    letter-spacing: -.01em;
+    /* Multi-stop gold shimmer gradient text */
+    background: linear-gradient(
+      108deg,
+      #c8a55a 0%,
+      #f0dba0 25%,
+      #c9a96e 45%,
+      #ffe9b0 60%,
+      #b8914a 80%,
+      #e8d5b0 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gshGoldFlow 6s ease-in-out infinite;
+  }
+  @keyframes gshGoldFlow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Subtitle block */
+  .gsh-sub-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gsh-sub-left-mark, .gsh-sub-right-mark {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .gsh-slm-line {
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: rgba(201,169,110,.3);
+  }
+  .gsh-slm-num {
+    font-family: 'Jost', sans-serif;
+    font-size: .6rem;
+    letter-spacing: .15em;
+    color: rgba(201,169,110,.45);
+  }
+  .gsh-subtitle-text {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+    color: rgba(245,237,224,.5);
+    line-height: 1.6;
+    letter-spacing: .02em;
+    text-align: center;
+    margin: 0;
+  }
+  .gsh-subtitle-text em {
+    color: rgba(201,169,110,.65);
+    font-style: italic;
+  }
+
+  /* Star divider */
+  .gsh-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .gsh-div-line {
+    flex: 1;
+    height: 1px;
+  }
+  .gsh-div-l {
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,.35));
+  }
+  .gsh-div-r {
+    background: linear-gradient(90deg, rgba(201,169,110,.35), transparent);
+  }
+  .gsh-div-icon {
+    color: var(--gold, #c9a96e);
+    padding: 0 18px;
+    opacity: .6;
+    animation: gshStarSpin 10s linear infinite;
+  }
+  @keyframes gshStarSpin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  /* ═══════════════════════════════════════════════════
+     AFTERCARE HEADER — FULL REDESIGN v2
+  ═══════════════════════════════════════════════════ */
+
+  .av2-header {
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+    overflow: hidden;
+  }
+
+  /* Giant background watermark */
+  .av2h-watermark {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Italiana', serif;
+    font-size: clamp(10rem, 22vw, 22rem);
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201,169,110,.05);
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    z-index: 0;
+    white-space: nowrap;
+  }
+
+  /* Tag row — capsule */
+  .av2h-tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+  }
+  .av2h-tag-line {
+    display: block;
+    flex: 1;
+    max-width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,169,110,.3), transparent);
+  }
+  .av2h-tag-capsule {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    border: 1px solid rgba(201,169,110,.2);
+    border-radius: 30px;
+    background: rgba(201,169,110,.04);
+    font-family: 'Jost', sans-serif;
+    font-size: .63rem;
+    letter-spacing: .32em;
+    text-transform: uppercase;
+    color: var(--gold, #c9a96e);
+  }
+  .av2h-tag-pulse {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold, #c9a96e);
+    flex-shrink: 0;
+    animation: av2hPulse 2.2s ease-in-out infinite;
+  }
+  @keyframes av2hPulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(201,169,110,.5); opacity: 1; }
+    50% { box-shadow: 0 0 0 5px rgba(201,169,110,0); opacity: .7; }
+  }
+
+  /* Display title — stacked rows with outline/solid overlap */
+  .av2h-display {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 36px;
+    line-height: .92;
+  }
+  .av2h-display-row1,
+  .av2h-display-row2 {
+    position: relative;
+    display: block;
+    line-height: .9;
+  }
+  /* Outline ghost behind each row */
+  .av2h-d-outline {
+    font-family: 'Italiana', serif;
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201,169,110,.12);
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 4px)) translateY(4px);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: .06em;
+  }
+  /* Solid foreground text */
+  .av2h-d-solid {
+    font-family: 'Italiana', serif;
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    color: rgba(245,237,224,.3);
+    letter-spacing: .06em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  .av2h-d-mid {
+    color: rgba(245,237,224,.45);
+    letter-spacing: .08em;
+  }
+  /* Giant italic em — the hero word */
+  .av2h-display-row3 { display: block; margin-top: -6px; }
+  .av2h-d-em {
+    font-family: 'Italiana', serif;
+    font-style: italic;
+    font-size: clamp(4.8rem, 12vw, 11rem);
+    letter-spacing: -.02em;
+    line-height: .85;
+    background: linear-gradient(
+      118deg,
+      #b8914a 0%,
+      #e8d5a8 22%,
+      #c9a96e 44%,
+      #fff3cc 62%,
+      #c9a96e 78%,
+      #b8914a 100%
+    );
+    background-size: 250% 250%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: av2hGold 7s ease-in-out infinite;
+    display: block;
+  }
+  @keyframes av2hGold {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Subtitle meta row */
+  .av2h-meta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .av2h-meta-mark {
+    color: var(--gold, #c9a96e);
+    opacity: .4;
+    flex-shrink: 0;
+    margin-top: 4px;
+    animation: av2hMarkSpin 12s linear infinite;
+  }
+  @keyframes av2hMarkSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .av2h-meta-text {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+    color: rgba(245,237,224,.48);
+    line-height: 1.65;
+    letter-spacing: .02em;
+    text-align: center;
+    margin: 0;
+  }
+  .av2h-meta-text em {
+    color: rgba(201,169,110,.7);
+    font-style: italic;
+  }
+
+  /* Stats row */
+  .av2h-count-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    border: 1px solid rgba(201,169,110,.12);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  .av2h-count-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 14px 28px;
+    background: rgba(201,169,110,.025);
+    transition: background .3s ease;
+  }
+  .av2h-count-item:hover { background: rgba(201,169,110,.06); }
+  .av2h-count-item strong {
+    font-family: 'Italiana', serif;
+    font-size: 1.9rem;
+    color: var(--gold, #c9a96e);
+    line-height: 1;
+    display: block;
+  }
+  .av2h-count-item span {
+    font-family: 'Jost', sans-serif;
+    font-size: .58rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: rgba(245,237,224,.3);
+    white-space: nowrap;
+  }
+  .av2h-count-div {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(201,169,110,.1);
+  }
+
+  /* Hide old conflicting classes */
+  .av2-label, .av2-title, .av2-subtitle,
+  .av2h-ornament-row, .av2h-label, .av2h-title-stack,
+  .av2h-sub-row, .av2h-bottom-bar,
+  .gsh-eyebrow, .gsh-title-block, .gsh-subtitle, .gsh-rule {
+    display: none !important;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .gsh-sub-wrap { flex-direction: column; gap: 12px; }
+    .gsh-sub-left-mark, .gsh-sub-right-mark { display: none; }
+    .gsh-title-ghost { display: none; }
+    .av2h-watermark { display: none; }
+    .av2h-display-row1 .av2h-d-outline,
+    .av2h-display-row2 .av2h-d-outline { display: none; }
+    .av2h-count-row { flex-wrap: wrap; border: none; gap: 10px; }
+    .av2h-count-item { border: 1px solid rgba(201,169,110,.12); border-radius: 2px; }
+    .av2h-count-div { display: none; }
+    .av2h-meta { flex-direction: column; align-items: center; gap: 8px; }
+    .av2h-meta-mark { display: none; }
+    .gsh-particles { display: none; }
+  }
+  </style>
+
+  <script>
+    // ── Aftercare V2 scroll-reveal with stagger ─────────────
+    (function () {
+      const cards = document.querySelectorAll('.av2-card');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const delay = (parseInt(el.dataset.delay) || 0) * 90;
+            setTimeout(() => el.classList.add('av2-visible'), delay);
+            io.unobserve(el);
+          }
+        });
+      }, { threshold: 0.12 });
+      cards.forEach(c => io.observe(c));
+    })();
+  </script>
+
+
+  <section id="contact" class="cta">
+    <div class="cta-bg"><img src="lifestyle3.jpg" alt=""></div>
+    <div class="cta-veil"></div>
+    <div class="cta-inner rev">
+      <div class="section-label cta-label">Contact / Book Now</div>
+      <h2>Schedule Your <em>Consultation</em></h2>
+      <p>Experience the power of European precision aesthetics. Book your consultation today and discover a refined
+        approach to aesthetic medicine.</p>
+      <button onclick="openConsultModal()" class="btn-gold-fill cta-btn">Request a Consultation</button>
+      <div class="cta-contacts">
+        <a href="tel:3133309999">☏ (313) 330-9999</a>
+        <a href="/cdn-cgi/l/email-protection#afcdc0c0c4efc9c6c1cadcdccac2cacbc6cccec3dcdfce81ccc0c2">✉ <span
+            class="__cf_email__"
+            data-cfemail="20424f4f4b6046494e455353454d45444943414c5350410e434f4d">[email&#160;protected]</span></a>
+      </div>
+      <p class="cta-tagline">See the Difference. Feel the Difference.</p>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="f-logo">lifestyle <em>Medical Spa</em></div>
+    <div class="f-links">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#aftercare">Aftercare</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ── Treatment Video Modal ───────────────────────────────
+    function openTreatModal(src, title, desc, priceLabel, price) {
+      const modal = document.getElementById('treatModal');
+      const img = document.getElementById('tvmImage');
+      document.getElementById('tvmTitle').textContent = title;
+      document.getElementById('tvmDesc').textContent = desc;
+      document.getElementById('tvmPriceLabel').textContent = priceLabel;
+      document.getElementById('tvmPrice').textContent = price;
+      document.getElementById('tvmPriceLabel2').textContent = priceLabel;
+      document.getElementById('tvmPrice2').textContent = price;
+      img.src = src;
+      img.alt = title;
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeTreatModal(e) {
+      if (e && e.target !== document.getElementById('treatModal') && !e.target.closest('.tvm-close')) return;
+      const modal = document.getElementById('treatModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { const m = document.getElementById('treatModal'); if (m.classList.contains('open')) { m.classList.remove('open'); m.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; } } });
+
+    // ── Image/Video Slideshow helper ──────────────────────────────
+    function initImageSlideshow(containerId, selector, intervalMs, dotsId) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+      const slides = container.querySelectorAll(selector);
+      if (!slides.length) return;
+      const dots = dotsId ? document.querySelectorAll('#' + dotsId + ' .asd') : null;
+      let idx = 0;
+      const cycle = () => {
+        slides.forEach((s, i) => {
+          const isActive = i === idx;
+          s.classList.toggle('active', isActive);
+          // handle video elements
+          if (s.tagName === 'VIDEO') {
+            if (isActive) { s.currentTime = 0; s.play().catch(() => {}); }
+            else { s.pause(); }
+          }
+        });
+        if (dots) dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        idx = (idx + 1) % slides.length;
+      };
+      cycle();
+      setInterval(cycle, intervalMs || 5000);
+    }
+
+    initImageSlideshow('msSlideshow', '.ms-slide', 6000);
+    initImageSlideshow('aftercareSlideshow', '.aftercare-slide', 7000, 'aftercareDots');
+
+    // ── Aesthetic Gallery ───────────────────────────────────
+    (function initGallery() {
+      const slides = document.querySelectorAll('#gsMain .gs-slide');
+      const thumbs = document.querySelectorAll('#gsStrip .gs-thumb');
+      const dots = document.querySelectorAll('#gsDots .gs-dot');
+      const bar = document.getElementById('gsProgressBar');
+      const TOTAL = slides.length;
+      let cur = 0, timer;
+
+      function resetBar() {
+        if (!bar) return;
+        bar.style.transition = 'none';
+        bar.style.width = '0%';
+        void bar.offsetWidth;
+        bar.style.transition = 'width 5s linear';
+        bar.style.width = '100%';
+      }
+
+      function goTo(n, dir) {
+        const prev = cur;
+        cur = (n + TOTAL) % TOTAL;
+        const outClass = dir === 'next' ? 'gs-exit-left' : 'gs-exit-right';
+        const inClass = dir === 'next' ? 'gs-enter-right' : 'gs-enter-left';
+
+        slides[prev].classList.remove('active');
+        slides[prev].classList.add(outClass);
+        slides[prev].addEventListener('animationend', () => slides[prev].classList.remove(outClass), { once: true });
+
+        slides[cur].classList.add(inClass);
+        void slides[cur].offsetWidth;
+        slides[cur].classList.remove(inClass);
+        slides[cur].classList.add('active');
+
+        thumbs.forEach((t, i) => t.classList.toggle('active', i === cur));
+        dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+        resetBar();
+      }
+
+      function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(cur + 1, 'next'), 5000);
+      }
+
+      document.getElementById('gsNext').addEventListener('click', () => { goTo(cur + 1, 'next'); startAuto(); });
+      document.getElementById('gsPrev').addEventListener('click', () => { goTo(cur - 1, 'prev'); startAuto(); });
+      thumbs.forEach(t => t.addEventListener('click', () => { const n = +t.dataset.idx; goTo(n, n > cur ? 'next' : 'prev'); startAuto(); }));
+      dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i, i > cur ? 'next' : 'prev'); startAuto(); }));
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') { goTo(cur + 1, 'next'); startAuto(); }
+        if (e.key === 'ArrowLeft') { goTo(cur - 1, 'prev'); startAuto(); }
+      });
+
+      resetBar();
+      startAuto();
+    })();
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       CONSULTATION MODAL
+  ═══════════════════════════════════════════════ -->
+  <div id="consultModal" class="cm-backdrop" aria-hidden="true">
+    <div class="cm-orb cm-orb1"></div>
+    <div class="cm-orb cm-orb2"></div>
+    <div class="cm-orb cm-orb3"></div>
+
+    <div class="cm-panel" role="dialog" aria-labelledby="cm-title">
+      <div class="cm-edge-top">
+        <div class="cm-edge-line"></div>
+        <div class="cm-edge-diamond">◆</div>
+        <div class="cm-edge-line"></div>
+      </div>
+
+      <button class="cm-close" onclick="closeConsultModal()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <line x1="1" y1="1" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <line x1="17" y1="1" x2="1" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="cm-header">
+        <div class="cm-eyebrow">Finesse Medical Spa</div>
+        <h2 id="cm-title" class="cm-title">Request a<br><em>Consultation</em></h2>
+        <p class="cm-subtitle">Experience European precision aesthetics. We will reach out within 24 hours to confirm
+          your appointment.</p>
+      </div>
+
+      <div class="cm-steps">
+        <div class="cm-step active" data-step="1"><span>1</span> Personal Info</div>
+        <div class="cm-step-line"></div>
+        <div class="cm-step" data-step="2"><span>2</span> Treatment</div>
+        <div class="cm-step-line"></div>
+        <div class="cm-step" data-step="3"><span>3</span> Schedule</div>
+      </div>
+
+      <form id="consultForm" class="cm-form" novalidate>
+        <div class="cm-page active" data-page="1">
+          <div class="cm-field-group">
+            <div class="cm-field">
+              <label for="cm-fname">First Name</label>
+              <input type="text" id="cm-fname" name="first_name" placeholder="Your first name" required
+                autocomplete="given-name">
+              <div class="cm-field-line"></div>
+            </div>
+            <div class="cm-field">
+              <label for="cm-lname">Last Name</label>
+              <input type="text" id="cm-lname" name="last_name" placeholder="Your last name" autocomplete="family-name">
+              <div class="cm-field-line"></div>
+            </div>
+          </div>
+          <div class="cm-field">
+            <label for="cm-email">Email Address</label>
+            <input type="email" id="cm-email" name="email" placeholder="you@example.com" required autocomplete="email">
+            <div class="cm-field-line"></div>
+          </div>
+          <div class="cm-field">
+            <label for="cm-phone">Phone Number</label>
+            <input type="tel" id="cm-phone" name="phone" placeholder="(313) 000-0000" autocomplete="tel">
+            <div class="cm-field-line"></div>
+          </div>
+        </div>
+
+        <div class="cm-page" data-page="2">
+          <div class="cm-field">
+            <label>Treatment of Interest</label>
+            <div class="cm-treatment-grid">
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Botox" required>
+                <span class="cm-treat-card"><span class="cm-treat-icon">✦</span><span
+                    class="cm-treat-name">Botox</span><span class="cm-treat-price">from $300</span></span>
+              </label>
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Lip Augmentation">
+                <span class="cm-treat-card"><span class="cm-treat-icon">◈</span><span class="cm-treat-name">Lip
+                    Augmentation</span><span class="cm-treat-price">from $110</span></span>
+              </label>
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Facial Volumetry">
+                <span class="cm-treat-card"><span class="cm-treat-icon">◉</span><span class="cm-treat-name">Facial
+                    Volumetry</span><span class="cm-treat-price">from $400</span></span>
+              </label>
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Mesotherapy">
+                <span class="cm-treat-card"><span class="cm-treat-icon">❋</span><span
+                    class="cm-treat-name">Mesotherapy</span><span class="cm-treat-price">from $250</span></span>
+              </label>
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Dermal Fillers">
+                <span class="cm-treat-card"><span class="cm-treat-icon">◇</span><span class="cm-treat-name">Dermal
+                    Fillers</span><span class="cm-treat-price">from $400</span></span>
+              </label>
+              <label class="cm-treat-option">
+                <input type="radio" name="treatment" value="Biostimulators">
+                <span class="cm-treat-card"><span class="cm-treat-icon">⬡</span><span
+                    class="cm-treat-name">Biostimulators</span><span class="cm-treat-price">from $300</span></span>
+              </label>
+            </div>
+          </div>
+          <div class="cm-field">
+            <label for="cm-message">Additional Notes <span class="cm-optional">(optional)</span></label>
+            <textarea id="cm-message" name="message" placeholder="Tell us about your goals or any concerns..."
+              rows="3"></textarea>
+            <div class="cm-field-line"></div>
+          </div>
+          <div class="cm-field">
+            <label for="cm-image">Upload Your Photo <span class="cm-optional">(optional)</span></label>
+            <div class="cm-image-upload">
+              <input type="file" id="cm-image" name="image" accept="image/*" style="display:none">
+              <button type="button" class="cm-image-input-btn" onclick="document.getElementById('cm-image').click()">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-bottom:4px;">
+                  <circle cx="6.5" cy="6.5" r="1.5" fill="currentColor"/>
+                  <path d="M2 14L6 9l2 2 7-8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  <rect x="1" y="1" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                </svg>
+                <span id="cm-image-label">Choose Image</span>
+              </button>
+              <div id="cm-image-preview" style="display:none;margin-top:12px;">
+                <img id="cm-image-thumb" src="" alt="Preview" style="max-width:100%;max-height:120px;border-radius:4px;border:1px solid rgba(201,169,110,.2);">
+                <button type="button" class="cm-image-remove" onclick="cmClearImage()">Remove Image</button>
+              </div>
+              <div class="cm-field-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cm-page" data-page="3">
+          <div class="cm-field-group">
+            <div class="cm-field">
+              <label for="cm-date">Preferred Date</label>
+              <input type="date" id="cm-date" name="preferred_date" required>
+              <div class="cm-field-line"></div>
+            </div>
+            <div class="cm-field">
+              <label for="cm-time">Preferred Time</label>
+              <select id="cm-time" name="preferred_time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+              </select>
+              <div class="cm-field-line"></div>
+            </div>
+          </div>
+          <div class="cm-field" style="margin-bottom:16px;">
+            <label>How did you hear about us?</label>
+            <div class="cm-radio-group">
+              <label class="cm-radio"><input type="radio" name="referral"
+                  value="Instagram"><span>Instagram</span></label>
+              <label class="cm-radio"><input type="radio" name="referral" value="Google"><span>Google</span></label>
+              <label class="cm-radio"><input type="radio" name="referral" value="Referral"><span>Referral</span></label>
+              <label class="cm-radio"><input type="radio" name="referral" value="Other"><span>Other</span></label>
+            </div>
+          </div>
+          <div class="cm-privacy">
+            <label class="cm-checkbox">
+              <input type="checkbox" id="cm-consent" required>
+              <span class="cm-checkmark"></span>
+              <span>I consent to being contacted by lifestyle Medical Spa regarding my consultation request.</span>
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <div class="cm-nav">
+        <button type="button" class="cm-btn-back" id="cmBack" onclick="cmNavigate(-1)" style="display:none">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Back
+        </button>
+        <button type="button" class="cm-btn-next" id="cmNext" onclick="cmNavigate(1)">
+          Continue
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button type="button" class="cm-btn-submit" id="cmSubmit" onclick="cmSubmit()" style="display:none">
+          <span class="cm-btn-text">Confirm Consultation</span>
+          <span class="cm-btn-loader" style="display:none">
+            <svg class="cm-spin" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="2" stroke-dasharray="35"
+                stroke-dashoffset="10" />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="cm-error" id="cmError" aria-live="polite"></div>
+
+      <div class="cm-success" id="cmSuccess" style="display:none">
+        <div class="cm-success-ring">
+          <svg class="cm-success-check" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="var(--gold)" stroke-width="1.5" />
+            <path class="cm-check-path" d="M12 20l6 6 10-12" stroke="var(--gold)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="30" stroke-dashoffset="30" />
+          </svg>
+        </div>
+        <h3>Consultation Requested</h3>
+        <p>Thank you. We will reach out within 24 hours to confirm your appointment with Katarzyna.</p>
+        <div class="cm-success-contact"><a href="tel:3133309999">☏ (313) 330-9999</a></div>
+        <button class="cm-btn-close-success" onclick="closeConsultModal()">Close</button>
+      </div>
+
+      <div class="cm-edge-bottom">
+        <div class="cm-edge-line"></div>
+        <div class="cm-edge-dot"></div>
+        <div class="cm-edge-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>
+    // ── Configure Supabase ──────────────────────────────────
+    // Replace with your actual Supabase project URL and anon key
+    const SUPABASE_URL = 'https://eoczzktmlowyzmappjkr.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvY3p6a3RtbG93eXptYXBwamtyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5ODY2MTcsImV4cCI6MjA4OTU2MjYxN30.e_gxOBuzlMSZtSBQuYyfeP0FK-tjpDbeGsMeWgM4dC4';
+    let _supabase = null;
+    try {
+      _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    } catch (e) { console.warn('Supabase not configured:', e); }
+
+    // ── Modal logic ─────────────────────────────────────────
+    let cmCurrentPage = 1;
+    const CM_TOTAL = 3;
+    let cmSelectedFile = null; // Store selected image file
+
+    // Handle image file selection
+    document.getElementById('cm-image').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      // Validate file is an image
+      if (!file.type.startsWith('image/')) {
+        alert('Please select an image file');
+        return;
+      }
+      
+      // Validate file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        alert('Image must be smaller than 5MB');
+        e.target.value = '';
+        return;
+      }
+      
+      cmSelectedFile = file;
+      
+      // Show preview
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        document.getElementById('cm-image-label').textContent = 'Change Image';
+        document.getElementById('cm-image-thumb').src = evt.target.result;
+        document.getElementById('cm-image-preview').style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function cmClearImage() {
+      cmSelectedFile = null;
+      document.getElementById('cm-image').value = '';
+      document.getElementById('cm-image-preview').style.display = 'none';
+      document.getElementById('cm-image-label').textContent = 'Choose Image';
+    }
+
+    function openConsultModal() {
+      const modal = document.getElementById('consultModal');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      cmGoToPage(1);
+    }
+    function closeConsultModal() {
+      const modal = document.getElementById('consultModal');
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      setTimeout(cmResetForm, 500);
+    }
+    document.getElementById('consultModal').addEventListener('click', function (e) {
+      if (e.target === this) closeConsultModal();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeConsultModal(); });
+
+    function cmGoToPage(page) {
+      cmCurrentPage = page;
+      document.querySelectorAll('.cm-page').forEach(p => p.classList.remove('active'));
+      document.querySelector(`.cm-page[data-page="${page}"]`).classList.add('active');
+      document.querySelectorAll('.cm-step').forEach(s => {
+        const n = parseInt(s.dataset.step);
+        s.classList.remove('active', 'done');
+        if (n === page) s.classList.add('active');
+        else if (n < page) s.classList.add('done');
+      });
+      document.getElementById('cmBack').style.display = page > 1 ? 'flex' : 'none';
+      document.getElementById('cmNext').style.display = page < CM_TOTAL ? 'flex' : 'none';
+      document.getElementById('cmSubmit').style.display = page === CM_TOTAL ? 'flex' : 'none';
+      document.querySelector('.cm-panel').scrollTop = 0;
+    }
+
+    function cmValidatePage(page) {
+      const f = document.getElementById('consultForm');
+      if (page === 1) {
+        if (!f.querySelector('#cm-fname').value.trim()) return 'Please enter your first name.';
+        const em = f.querySelector('#cm-email').value.trim();
+        if (!em || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return 'Please enter a valid email address.';
+      }
+      if (page === 2) {
+        if (!f.querySelector('input[name="treatment"]:checked')) return 'Please select a treatment of interest.';
+      }
+      if (page === 3) {
+        if (!f.querySelector('#cm-date').value) return 'Please select a preferred date.';
+        if (!f.querySelector('#cm-time').value) return 'Please select a preferred time.';
+        if (!f.querySelector('#cm-consent').checked) return 'Please confirm your consent to be contacted.';
+      }
+      return null;
+    }
+
+    function cmNavigate(dir) {
+      document.getElementById('cmError').textContent = '';
+      if (dir === 1) { const err = cmValidatePage(cmCurrentPage); if (err) { document.getElementById('cmError').textContent = err; return; } }
+      const next = cmCurrentPage + dir;
+      if (next >= 1 && next <= CM_TOTAL) cmGoToPage(next);
+    }
+
+    async function cmSubmit() {
+      document.getElementById('cmError').textContent = '';
+      const err = cmValidatePage(3);
+      if (err) { document.getElementById('cmError').textContent = err; return; }
+      const btn = document.getElementById('cmSubmit');
+      btn.querySelector('.cm-btn-text').style.display = 'none';
+      btn.querySelector('.cm-btn-loader').style.display = 'flex';
+      btn.disabled = true;
+      const f = document.getElementById('consultForm');
+      
+      // Generate unique ID for this consultation
+      const consultationId = crypto.randomUUID();
+      
+      let imageUrl = null;
+      
+      // Upload image to Supabase Storage if provided
+      if (cmSelectedFile && _supabase) {
+        try {
+          const fileName = `${consultationId}.jpg`;
+          const { error: uploadError } = await _supabase.storage
+            .from('client-photos')
+            .upload(fileName, cmSelectedFile, {
+              cacheControl: '3600',
+              upsert: false
+            });
+          
+          if (uploadError) {
+            console.warn('Image upload warning:', uploadError);
+            // Don't fail submission if image upload fails
+          } else {
+            // Get public URL
+            const { data } = _supabase.storage
+              .from('client-photos')
+              .getPublicUrl(fileName);
+            imageUrl = data.publicUrl;
+          }
+        } catch(e) {
+          console.warn('Image upload error:', e);
+          // Continue with submission without image
+        }
+      }
+      
+      const data = {
+        id: consultationId,
+        first_name: f.querySelector('#cm-fname').value.trim(),
+        last_name: f.querySelector('#cm-lname').value.trim(),
+        email: f.querySelector('#cm-email').value.trim(),
+        phone: f.querySelector('#cm-phone').value.trim(),
+        treatment: (f.querySelector('input[name="treatment"]:checked') || {}).value || '',
+        message: f.querySelector('#cm-message').value.trim(),
+        image_url: imageUrl,
+        preferred_date: f.querySelector('#cm-date').value,
+        preferred_time: f.querySelector('#cm-time').value,
+        referral: (f.querySelector('input[name="referral"]:checked') || {}).value || '',
+        created_at: new Date().toISOString()
+      };
+      try {
+        if (_supabase) {
+          const { error } = await _supabase.from('consultations').insert([data]);
+          if (error) throw error;
+        } else {
+          // Demo mode: simulate network delay
+          await new Promise(r => setTimeout(r, 1200));
+        }
+        showConsultSuccess();
+      } catch (e) {
+        console.error(e);
+        // Show success anyway as fallback (or replace with error display)
+        showConsultSuccess();
+      } finally {
+        btn.querySelector('.cm-btn-text').style.display = 'flex';
+        btn.querySelector('.cm-btn-loader').style.display = 'none';
+        btn.disabled = false;
+      }
+    }
+
+    function showConsultSuccess() {
+      document.getElementById('consultForm').style.display = 'none';
+      document.querySelectorAll('.cm-steps,.cm-nav,.cm-error,.cm-header').forEach(el => el.style.display = 'none');
+      document.getElementById('cmSuccess').style.display = 'block';
+    }
+    function cmResetForm() {
+      document.getElementById('consultForm').reset();
+      document.getElementById('consultForm').style.display = 'block';
+      document.getElementById('cmSuccess').style.display = 'none';
+      document.getElementById('cmError').textContent = '';
+      document.querySelectorAll('.cm-steps,.cm-nav,.cm-error,.cm-header').forEach(el => el.style.removeProperty('display'));
+      cmClearImage();
+      cmGoToPage(1);
+    }
+  </script>
+  <!-- ═══════════════════════════════════════════════
+       MULTI-VIDEO HERO — STYLES & LOGIC
+  ═══════════════════════════════════════════════ -->
+  <style>
+    /* ── Video stage ── */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .hvb-stage {
+      position: absolute;
+      inset: 0;
+    }
+    .hvb-vid {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.6s cubic-bezier(.4,0,.2,1);
+      will-change: opacity;
+    }
+    .hvb-vid.active {
+      opacity: 1;
+    }
+    .hvb-vid.exiting {
+      opacity: 0;
+    }
+
+    /* ── Layered overlays ── */
+    .hvb-overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(105deg, rgba(10,6,2,.82) 0%, rgba(10,6,2,.38) 55%, rgba(10,6,2,.18) 100%),
+        linear-gradient(0deg, rgba(10,6,2,.75) 0%, transparent 45%);
+      z-index: 1;
+    }
+    .hvb-overlay-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 110% 100% at 60% 50%, transparent 40%, rgba(5,3,1,.65) 100%);
+      z-index: 2;
+    }
+    .hvb-overlay-scanlines {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0,0,0,.04) 3px,
+        rgba(0,0,0,.04) 4px
+      );
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    /* ── Video counter pill ── */
+    .hero-vid-counter {
+      position: absolute;
+      bottom: 140px;
+      right: 40px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Jost', sans-serif;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      color: rgba(255,255,255,.55);
+    }
+    .hvc-num {
+      color: var(--gold, #c9a96e);
+      font-weight: 500;
+      font-size: .85rem;
+    }
+    .hvc-track {
+      width: 60px;
+      height: 1px;
+      background: rgba(255,255,255,.18);
+      position: relative;
+      overflow: hidden;
+    }
+    .hvc-fill {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      background: var(--gold, #c9a96e);
+      width: 0%;
+      transition: width linear;
+    }
+    .hvc-total {
+      font-size: .72rem;
+    }
+
+    /* ── Hero content upgrades ── */
+    .hero-tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .htag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold, #c9a96e);
+      flex-shrink: 0;
+      animation: htag-pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes htag-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .4; transform: scale(.6); }
+    }
+
+    /* ── Staggered h1 lines ── */
+    .hero-h1-line {
+      display: block;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: heroLineIn .9s cubic-bezier(.22,1,.36,1) forwards;
+    }
+    .hero-h1-line[data-line="1"] { animation-delay: .3s; }
+    .hero-h1-line[data-line="2"] { animation-delay: .5s; }
+    .hero-h1-line[data-line="3"] { animation-delay: .7s; }
+    @keyframes heroLineIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Scroll label ── */
+    .hero-scroll-label {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,.35);
+      font-family: 'Jost', sans-serif;
+      font-size: .62rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    .hero-scroll-dot {
+      animation: scrollBob 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* ── Decorative gold corner ── */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 180px;
+      height: 180px;
+      border-top: 1px solid rgba(201,169,110,.3);
+      border-left: 1px solid rgba(201,169,110,.3);
+      z-index: 10;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 80px; right: 0;
+      width: 120px;
+      height: 120px;
+      border-bottom: 1px solid rgba(201,169,110,.2);
+      border-right: 1px solid rgba(201,169,110,.2);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero-vid-counter { right: 18px; bottom: 120px; }
+      .hero-scroll-label { display: none; }
+    }
+  </style>
+
+  <script>
+    // ── Multi-video hero background ─────────────────────────
+    (function initHeroVideos() {
+      const vids = document.querySelectorAll('.hvb-vid');
+      const fill = document.getElementById('hvcFill');
+      const numEl = document.getElementById('hvcNum');
+      const DURATION = 9000; // ms per video before switch
+      let cur = 0, rafId, startTs;
+
+      function pad(n) { return String(n + 1).padStart(2, '0'); }
+
+      function playVid(idx) {
+        vids.forEach((v, i) => {
+          if (i === idx) {
+            v.classList.add('active');
+            v.currentTime = 0;
+            v.play().catch(() => {});
+          } else {
+            v.classList.remove('active');
+            v.pause();
+          }
+        });
+        if (numEl) numEl.textContent = pad(idx);
+        // reset & animate fill bar
+        if (fill) {
+          fill.style.transition = 'none';
+          fill.style.width = '0%';
+          requestAnimationFrame(() => {
+            fill.style.transition = `width ${DURATION}ms linear`;
+            fill.style.width = '100%';
+          });
+        }
+      }
+
+      function next() {
+        cur = (cur + 1) % vids.length;
+        playVid(cur);
+      }
+
+      // Listen to timeupdate on each video to auto-advance near end
+      vids.forEach((v, i) => {
+        v.addEventListener('timeupdate', () => {
+          if (i !== cur) return;
+          if (v.duration && v.currentTime >= v.duration - 1.6) {
+            v.removeEventListener('timeupdate', arguments.callee);
+            next();
+          }
+        });
+        // Fallback: interval advance
+        v.addEventListener('ended', () => { if (i === cur) next(); });
+      });
+
+      // Interval fallback for videos that loop or have no duration
+      setInterval(next, DURATION);
+
+      playVid(0);
+    })();
+  </script>
+
+</body>
+
+</html>
